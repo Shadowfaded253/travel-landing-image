@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wanderly - Travel App</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container nav-container">
+      <h1 class="logo">Wanderly</h1>
+
+      <nav id="nav-menu">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="hamburger" id="hamburger">
+        ☰
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero"
+      style="background: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1600&auto=format&fit=crop') no-repeat center center/cover;">
+      <div class="hero-content">
+        <h2>Explore The World With Confidence</h2>
+        <p>Your journey begins here. Discover amazing destinations and unforgettable experiences.</p>
+        <a href="#destinations" class="btn">Start Exploring</a>
+      </div>
+    </section>
+
+    <!-- FEATURES SECTION -->
+    <section id="features" class="features container">
+      <h2>Why Choose Wanderly?</h2>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <h3>Smart Planning</h3>
+          <p>AI-powered travel recommendations tailored just for you.</p>
+        </div>
+
+        <div class="feature-card">
+          <h3>Best Deals</h3>
+          <p>Exclusive discounts on flights, hotels, and experiences.</p>
+        </div>
+
+        <div class="feature-card">
+          <h3>24/7 Support</h3>
+          <p>We're here to help you anytime, anywhere in the world.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESTINATIONS SECTION -->
+    <section id="destinations" class="destinations container">
+      <h2>Popular Destinations</h2>
+
+      <div class="destination-grid">
+
+        <article class="destination-card">
+          <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?q=80&w=800&auto=format&fit=crop" alt="Paris">
+          <h3>Paris, France</h3>
+          <p>The city of love, art, fashion, and timeless beauty.</p>
+        </article>
+
+        <article class="destination-card">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800&auto=format&fit=crop" alt="Bali">
+          <h3>Bali, Indonesia</h3>
+          <p>Tropical paradise with breathtaking beaches and culture.</p>
+        </article>
+
+        <article class="destination-card">
+          <img src="https://images.unsplash.com/photo-1496588152823-86ff7695a68f?q=80&w=800&auto=format&fit=crop" alt="New York">
+          <h3>New York, USA</h3>
+          <p>The city that never sleeps — full of energy and life.</p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact container">
+      <h2>Get In Touch</h2>
+
+      <form>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Wanderly Travel App | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const navMenu = document.getElementById("nav-menu");
+
+    hamburger.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
+    });
+  </script>
+
+</body>
+</html>
